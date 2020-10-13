@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Currency</title>
+    <title>JSDoc: Global</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: Currency</h1>
+    <h1 class="page-title">Global</h1>
 
     
 
@@ -28,9 +28,7 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Currency<span class="signature">(unit, arr)</span><span class="type-signature"></span></h2>
-        
-            <div class="class-description"><p>Currency class handles all currency related conversions</p></div>
+        <h2></h2>
         
     
 </header>
@@ -40,100 +38,7 @@
     
         
 
-    
-    <h2>Constructor</h2>
-    
-
-    
-    <h4 class="name" id="Currency"><span class="type-signature"></span>new Currency<span class="signature">(unit, arr)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
         
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>unit</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Currency Unit</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>arr</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Stores the different conversion rates</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
 
 
 <dl class="details">
@@ -163,11 +68,6 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="conversions_Currency.js.html">conversions/Currency.js</a>, <a href="conversions_Currency.js.html#line4">line 4</a>
-    </li></ul></dd>
-    
 
     
 
@@ -177,24 +77,7 @@
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
     
     </div>
 
@@ -221,17 +104,12 @@
     
 
     
-    <h4 class="name" id="getAllConversions"><span class="type-signature">(async) </span>getAllConversions<span class="signature">(quantity, precision)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="descending_length"><span class="type-signature"></span>descending_length<span class="signature">(a, b)</span><span class="type-signature"></span></h4>
     
 
     
 
 
-
-<div class="description">
-    <p>From our standard conversion we try to convert into all the other units specified in arr property of this class
-with a precision no more than 10</p>
-</div>
 
 
 
@@ -266,13 +144,13 @@ with a precision no more than 10</p>
 
         <tr>
             
-                <td class="name"><code>quantity</code></td>
+                <td class="name"><code>a</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">Array</span>
 
 
             
@@ -282,20 +160,20 @@ with a precision no more than 10</p>
 
             
 
-            <td class="description last"><p>Selections converted to USD</p></td>
+            <td class="description last"><p>array of strings</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>precision</code></td>
+                <td class="name"><code>b</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">Array</span>
 
 
             
@@ -305,154 +183,7 @@ with a precision no more than 10</p>
 
             
 
-            <td class="description last"><p>Calls our previour function to get precise value</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="conversions_Currency.js.html">conversions/Currency.js</a>, <a href="conversions_Currency.js.html#line128">line 128</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>an array with precision</p>
-</div>
-
-
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="getData"><span class="type-signature"></span>getData<span class="signature">(q)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>api call that fetches the conversion rate for a given query q, where q is the stock name. For eg: USD</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>q</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Any user query for eg(U.S.D)</p></td>
+            <td class="description last"><p>array of strings</p></td>
         </tr>
 
     
@@ -490,7 +221,7 @@ with a precision no more than 10</p>
 
         <tr>
             
-                <td class="name"><code>getData</code></td>
+                <td class="name"><code>descending_length</code></td>
             
 
             <td class="type">
@@ -506,7 +237,7 @@ with a precision no more than 10</p>
 
             
 
-            <td class="description last"><p>fetches live rates from the API</p></td>
+            <td class="description last"><p>This is a sort function used to sort an array of string in descending order of string lengths</p></td>
         </tr>
 
     
@@ -545,7 +276,7 @@ with a precision no more than 10</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="conversions_Currency.js.html">conversions/Currency.js</a>, <a href="conversions_Currency.js.html#line23">line 23</a>
+        <a href="main_scripts_utility.js.html">main_scripts/utility.js</a>, <a href="main_scripts_utility.js.html#line12">line 12</a>
     </li></ul></dd>
     
 
@@ -574,7 +305,443 @@ with a precision no more than 10</p>
 
         
 <div class="param-desc">
-    <p>fetched data from the API</p>
+    <p>sorted array in descending order of string lengths</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="get_conversion_class"><span class="type-signature"></span>get_conversion_class<span class="signature">(type, unit)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>unit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>get_conversion_class</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Conversion  lass from the unit type</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="main_scripts_utility.js.html">main_scripts/utility.js</a>, <a href="main_scripts_utility.js.html#line45">line 45</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Return appropriate conversion class from the conversion scripts based on unit type</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="get_possible_conversions_list"><span class="type-signature"></span>get_possible_conversions_list<span class="signature">(type, currentUnit)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>currentUnit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>get_possible_conversions_list</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Function to return all popular units</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="main_scripts_utility.js.html">main_scripts/utility.js</a>, <a href="main_scripts_utility.js.html#line34">line 34</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>For a given unit, this function returns all the popular units that it can be converted into except itself</p>
 </div>
 
 
@@ -597,10 +764,6 @@ with a precision no more than 10</p>
     
 
 
-
-<div class="description">
-    <p>Function to get a maximum precision of 10</p>
-</div>
 
 
 
@@ -651,7 +814,7 @@ with a precision no more than 10</p>
 
             
 
-            <td class="description last"><p>currency value</p></td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -674,7 +837,7 @@ with a precision no more than 10</p>
 
             
 
-            <td class="description last"><p>precision value</p></td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -682,6 +845,58 @@ with a precision no more than 10</p>
 </table>
 
 
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>getPreciseNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>function for precise number</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -715,7 +930,7 @@ with a precision no more than 10</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="conversions_Currency.js.html">conversions/Currency.js</a>, <a href="conversions_Currency.js.html#line59">line 59</a>
+        <a href="main_scripts_utility.js.html">main_scripts/utility.js</a>, <a href="main_scripts_utility.js.html#line86">line 86</a>
     </li></ul></dd>
     
 
@@ -744,7 +959,7 @@ with a precision no more than 10</p>
 
         
 <div class="param-desc">
-    <p>precise value of upto 10</p>
+    <p>Return number with a max precison of 10</p>
 </div>
 
 
@@ -769,7 +984,7 @@ with a precision no more than 10</p>
 
 
 <div class="description">
-    <p>Function to get a number's precision</p>
+    <p>Get a number's precision</p>
 </div>
 
 
@@ -821,7 +1036,7 @@ with a precision no more than 10</p>
 
             
 
-            <td class="description last"><p>currency value</p></td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -875,7 +1090,7 @@ with a precision no more than 10</p>
 
             
 
-            <td class="description last"><p>function for precision</p></td>
+            <td class="description last"><p>function for a number's precision</p></td>
         </tr>
 
     
@@ -914,7 +1129,7 @@ with a precision no more than 10</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="conversions_Currency.js.html">conversions/Currency.js</a>, <a href="conversions_Currency.js.html#line43">line 43</a>
+        <a href="main_scripts_utility.js.html">main_scripts/utility.js</a>, <a href="main_scripts_utility.js.html#line70">line 70</a>
     </li></ul></dd>
     
 
@@ -943,7 +1158,7 @@ with a precision no more than 10</p>
 
         
 <div class="param-desc">
-    <p>precise rate</p>
+    <p>number's precison</p>
 </div>
 
 
@@ -960,16 +1175,12 @@ with a precision no more than 10</p>
     
 
     
-    <h4 class="name" id="getStandardConversion"><span class="type-signature">(async) </span>getStandardConversion<span class="signature">(quantity)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="matches_filter"><span class="type-signature"></span>matches_filter<span class="signature">(currentUnit)</span><span class="type-signature"></span></h4>
     
 
     
 
 
-
-<div class="description">
-    <p>Our standard conversion is USD, so we try to convert all selection to USD</p>
-</div>
 
 
 
@@ -1004,13 +1215,13 @@ with a precision no more than 10</p>
 
         <tr>
             
-                <td class="name"><code>quantity</code></td>
+                <td class="name"><code>currentUnit</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">String</span>
 
 
             
@@ -1028,6 +1239,58 @@ with a precision no more than 10</p>
 </table>
 
 
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>matches_filter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This is a filtering function used by  get_possible_conversions_list to filter out the current unit itself</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -1061,7 +1324,7 @@ with a precision no more than 10</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="conversions_Currency.js.html">conversions/Currency.js</a>, <a href="conversions_Currency.js.html#line73">line 73</a>
+        <a href="main_scripts_utility.js.html">main_scripts/utility.js</a>, <a href="main_scripts_utility.js.html#line22">line 22</a>
     </li></ul></dd>
     
 
@@ -1090,7 +1353,7 @@ with a precision no more than 10</p>
 
         
 <div class="param-desc">
-    <p>value in standard conversion rate - USD</p>
+    <p>filtered current unit</p>
 </div>
 
 
