@@ -6,7 +6,7 @@
 class Mass {
     /**
      * 
-     * @param {*} unit Mass unit
+     * @param {Object} unit Mass unit
      * @param {Array} arr Array of all conversions
      */
     constructor(unit, arr) {
@@ -17,7 +17,7 @@ class Mass {
     /**
      * Our standard conversion is Kilograms, so we try to convert all selection to Kilograms
      * @property {Function} getStandardConversion function to convert into Kgs
-     * @param {*} quantity user query unit
+     * @param {Object} quantity user query unit
      * @returns All values converted to Kilograms
      */
 
@@ -40,7 +40,7 @@ class Mass {
     /**
      *From our standard conversion we try to convert into all the other units specified in arr property of this class
     with a precision no more than 10
-     * @param {*} quantity value to convert
+     * @param {Object} quantity value to convert
      * @param {number} precision upto this number precise
      * @returns connverted value with precision upto 10
      */

@@ -6,7 +6,7 @@
 class Length {
   /**
    * 
-   * @param {*} unit Length Unit
+   * @param {Object} unit Length Unit
    * @param {Array} arr Array of all conversions
    */
   constructor(unit, arr) {
@@ -44,7 +44,7 @@ class Length {
 
   /**
    * Our standard conversion is meters, so we try to convert all selection to meters
-   * @param {*} quantity 
+   * @param {Object} quantity 
    */
   getStandardConversion(quantity) {
     /**
@@ -80,7 +80,7 @@ class Length {
   /**
    *From our standard conversion we try to convert into all the other units specified in arr property of this class
     with a precision no more than 10*
-   * @param {*} quantity 
+   * @param {Object} quantity 
    * @param {number} precision precision restricted to 10
    * @returns Array with coverted rate
    */

@@ -4,7 +4,7 @@
 class Currency {
   /**
    * 
-   * @param {*} unit Currency Unit
+   * @param {Object} unit Currency Unit
    * @param {Array} arr Stores the different conversion rates
    */
   constructor(unit, arr) {
@@ -16,7 +16,7 @@ class Currency {
   /**
    * api call that fetches the conversion rate for a given query q, where q is the stock name. For eg: USD
    * @property {Function} getData fetches live rates from the API
-   * @param {*} q Any user query for eg(U.S.D)
+   * @param {Object} q Any user query for eg(U.S.D)
    * @returns fetched data from the API
    */
   
@@ -65,7 +65,7 @@ class Currency {
   
   /**
    * Our standard conversion is USD, so we try to convert all selection to USD
-   * @param {*} quantity 
+   * @param {Object} quantity 
    * @returns value in standard conversion rate - USD
    */
 
