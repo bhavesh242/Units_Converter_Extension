@@ -33,7 +33,12 @@ document.addEventListener('mousedown', (e) => {
     unitModal.style.visibility = 'hidden';
 }, false);
 
-// Display the modal at the cursor location and make it visible
+/**
+ * @property {Function} Display the modal at the cursor location and make it visible
+ * @param {*} mouseX 
+ * @param {*} mouseY 
+ * @param {*} html 
+ */
 function showModal(mouseX, mouseY, html) {
     unitModal.innerHTML = html;
     unitModal.style.top = document.documentElement.scrollTop + mouseY + 'px';
