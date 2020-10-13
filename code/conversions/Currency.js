@@ -1,25 +1,11 @@
-/**
- * Currency class handles all currency related conversions
- */
+//Our currency class handles all currency related conversions
 class Currency {
-  /**
-   * 
-   * @param {Object} unit Currency Unit
-   * @param {Object} arr Stores the different coversion rates
-   */
   constructor(unit, arr) {
     this.unit = unit;
     this.arr = arr;
   }
 
-  
-  /**
-   * api call that fetches the conversion rate for a given query q, where q is the stock name. For eg: USD
-   * @property {Function} getData fetches live rates from the API
-   * @param {Object} q Any user query for eg(U.S.D)
-   * @returns fetched data
-   */
-  
+  //api call that fetches the conversion rate for a given query q, where q is the stock name. For eg: USD
   getData(q) {
     if (typeof fetch !== "function") {
       let fetch = require("node-fetch");
@@ -33,13 +19,7 @@ class Currency {
     }
   }
 
-  /**
-   * Function to get a number's precision
-   * @property {Function} getPrecision function for precision
-   * @param {number} - currency value
-   * @returns precise rate
-   */
-
+  //Get a number's precision
   getPrecision(number) {
     let parts = number.toString().split(".");
     if (parts.length <= 1) {
